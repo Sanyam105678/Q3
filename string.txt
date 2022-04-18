@@ -1,0 +1,24 @@
+The String class is an immutable class whereas StringBuffer and StringBuilder classes are mutable that means we can modify the stringbuffers 
+and stringbuilders but can't modify the String.
+
+StringBuffer is synchronized and thread safe. Multiple threads can't call the methods of StringBuffer at a same time. StringBuilder isn't 
+synchronized and not thread safe. Multiple threads can call the methods of StringBuilder at a same time, but it exposes the authenticity of
+data. StringBuilder is more efficient than StringBuffer.
+
+
+toString() is inbult method. If we apply toString() to any object, will then be returned as a string object. It is the object rpresentation 
+in string form. By overriding the toString() method of the Object class, we can return values of the object, so don't need to write
+much code.
+
+public String toString(){
+
+//overriding the toString() method  
+  
+
+return roll +" "+ name +" "+ marks;  
+ 
+}  
+
+main(){
+sout(Student_object);
+}
